@@ -1,0 +1,10 @@
+[Bb]in
+[Cc]erts
+[Oo]bj
+*.csproj
+*.sln
+*.suo
+*.user
+*.vssscc
+robots.txt
+
