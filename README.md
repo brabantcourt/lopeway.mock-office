@@ -36,4 +36,6 @@ To override the mock library's default settings you must precede the lopeway.off
         }
     }
 
-
+<table>
+	<tr><td>debug</td><td>'true' to display tables/sheets as they're rendered; 'false' to hide the display</td></tr>
+</table>
