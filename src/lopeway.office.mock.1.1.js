@@ -41,28 +41,28 @@ $(function () {
     // Add self into the page
     /*
     <div id="lopeway-workbook">
-    <table id="sheets">
-    <tbody data-bind="foreach:sheets">
-    </tbody>
-    </table>
-    <table id="tables">
-    <tbody data-bind="foreach:tables" >
-    <tr >
-    <td data-bind="text:name"></td>
-    <td>
-    <table>
-    <tbody data-bind="foreach:rows">
-    <tr>
-    <!-- ko foreach: $data -->
-    <td data-bind="text:$data"></td>
-    <!-- /ko -->                                        
-    </tr>    
-    </tbody>
-    </table>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+        <table id="sheets">
+            <tbody data-bind="foreach:sheets">
+            </tbody>
+        </table>
+        <table id="tables">
+            <tbody data-bind="foreach:tables" >
+                <tr >
+                    <td data-bind="text:name"></td>
+                    <td>
+                        <table>
+                            <tbody data-bind="foreach:rows">
+                                <tr>
+                                    <!-- ko foreach: $data -->
+                                    <td data-bind="text:$data"></td>
+                                    <!-- /ko -->                                        
+                                </tr>    
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     */
 
@@ -101,7 +101,7 @@ $(function () {
             return viewModel.getSheetIndex(this.name) !== -1;
         };
         return Sheet;
-    } ());
+    }());
     Table = (function () {
         function Table(name) {
             this.name = encodeURIComponent(name.replace("!", "_"));
@@ -121,7 +121,7 @@ $(function () {
             return viewModel.getTable(this.name).rows();
         };
         return Table;
-    } ());
+    }());
 
     // Push it into the global namespace
     window.lopeway = window.lopeway || {};
@@ -147,9 +147,9 @@ $(function () {
         }
         return Binding;
     }());
-    MatrixBinding=(function(){
-        function MatrixBinding(name){
-            
+    MatrixBinding = (function () {
+        function MatrixBinding(name) {
+
         }
         return MatrixBinding;
     }());
