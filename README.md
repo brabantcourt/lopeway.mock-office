@@ -18,19 +18,21 @@ With a reference to the mock version:
 
 	<script src ="//.../lopeway.office.mock.1.2.js"></script>
 
+# Configuration
+
 To override the mock library's default settings you must precede the lopeway.office.mock file reference to a configuration JSON of the form:
 
 	lopeway = {
         excel: {
             config: {
-                debug: true,				// 'true' to display tables/sheets as they're rendered; 'false' to hide the display
-                id: "lopeway-workbook",		// ID of the DIV to which rendered content will be appended
-                sheets: "sheets",			// ID of the DIV to which rendered sheets will be appended
-                tables: "tables",			// ID of the DIV to which rendered tables will be appended
-                workbook: {					// Definition of the Excel spreadsheet
-                    name: "Book1",			// Unused
-                    sheets: [],				// Format { name: 'sheetname' }
-                    tables: []				// Format { name: 'tablename', cols = [c1, c2...], rows = [[r1c1,r1c2...],[r2c1,r2c2...] }
+                debug: true,
+                id: "lopeway-workbook",
+                sheets: "sheets",
+                tables: "tables",
+                workbook: {
+                    name: "Book1",
+                    sheets: [],
+                    tables: []
                 }
             }
         }
@@ -38,4 +40,19 @@ To override the mock library's default settings you must precede the lopeway.off
 
 <table>
 	<tr><td>debug</td><td>'true' to display tables/sheets as they're rendered; 'false' to hide the display</td></tr>
+	<tr><td>id</td><td>ID of the DIV to which rendered content will be appended</td></tr>
+	<tr><td>sheets</td><td>ID of the DIV to which rendered sheets will be appended</td></tr>
+	<tr><td>tables</td><td>ID of the DIV to which rendered tables will be appended</td></tr>
+	<tr><td>workbook</td><td>Definition of the Excel spreadsheet</td></tr>
+	<tr><td>name</td><td>Unused</td></tr>
+	<tr><td>sheets</td><td>Format { name: 'sheetname' }</td></tr>
+	<tr><td>tables</td><td>Format { name: 'tablename', cols = [c1, c2...], rows = [[r1c1,r1c2...],[r2c1,r2c2...] }</td></tr>
 </table>
+
+# Unit Test(s)
+
+[/tests/lopeway.office.mock.1.3.unittests.js](//github.com/brabantcourt/lopeway.mock-office/blobk/master/tests/lopeway.office.mock.1.3.html)
+
+# Example(s)
+
+[/examples/default.html](//github.com/brabantcourt/lopeway.mock-office/blobk/master/examples/default.html)
