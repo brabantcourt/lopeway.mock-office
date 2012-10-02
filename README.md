@@ -51,8 +51,8 @@ To override the mock library's default settings you must precede the lopeway.off
 
 # Unit Test(s)
 
-[/tests/lopeway.office.mock.1.3.unittests.js](http://github.com/brabantcourt/lopeway.mock-office/blobk/master/tests/lopeway.office.mock.1.3.html)
+[/tests/lopeway.office.mock.1.3.unittests.js](https://github.com/brabantcourt/lopeway.mock-office/blobk/master/tests/lopeway.office.mock.1.3.html)
 
 # Example(s)
 
-[/examples/default.html](http://github.com/brabantcourt/lopeway.mock-office/blobk/master/examples/default.html)
+[/examples/default.html](https://github.com/brabantcourt/lopeway.mock-office/blobk/master/examples/default.html)
